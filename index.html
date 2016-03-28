@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Bo Grooms: Hair Stylist</title>
+	<meta charset="utf-8" />
+
+    <!---Bootstrap CSS--->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!---Custom CSS--->
+    <link href="css/bowebsite.css" rel="stylesheet" />
+
+    <!---Google Fonts--->
+    <link href='https://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
+
+</head>
+<body ng-app="boModule">
+    <div id="navigationBar" class="container navbar">
+        <div class="row">
+            <div class="col-md-3 text-center">
+                <h1 id="navName">Bo Grooms</h1>
+            </div>
+            <div class="col-md-offset-3 col-md-2 text-center">
+                <a class="topLinks" href="#aboutSection"><h3 class="navOptions">About</h3></a>
+            </div>
+            <div class="col-md-2 text-center">
+                <a class="topLinks" href="#servicesSection"><h3 class="navOptions">Services</h3></a>
+            </div>
+            <div class="col-md-2 text-center">
+                <a class="topLinks" href="#contactSection"><h3 class="navOptions">Contact</h3></a>
+            </div>
+        </div>
+    </div>
+    <div id="introSection" class="container">
+        <div class="row">
+            <div class="col-md-3 text-center">
+                <span class="glyphicon glyphicon-star-empty boStar"></span>
+                <span class="glyphicon glyphicon-star-empty boStar"></span>
+                <span class="glyphicon glyphicon-star-empty boStar"></span>
+                <span class="glyphicon glyphicon-star-empty boStar"></span>
+                <span class="glyphicon glyphicon-star-empty boStar"></span>
+                <span class="glyphicon glyphicon-star-empty boStar"></span>
+            </div>
+            <div class="col-md-6">
+                <img id="boPic" class="img-circle center-block" src="img/bo.jpg" /><br />
+            </div>
+            <div class="col-md-3 text-center">
+                <span class="glyphicon glyphicon-star-empty boStar"></span>
+                <span class="glyphicon glyphicon-star-empty boStar"></span>
+                <span class="glyphicon glyphicon-star-empty boStar"></span>
+                <span class="glyphicon glyphicon-star-empty boStar"></span>
+                <span class="glyphicon glyphicon-star-empty boStar"></span>
+                <span class="glyphicon glyphicon-star-empty boStar"></span>
+            </div> 
+        </div>
+        <div class="row">
+            <div id="boBar" class="text-center">
+                <h1 class="sectionHeading">Larry "Bo" Grooms</h1>
+                <h2 id="title">Salon Expert</h2>
+            </div>
+        </div>
+    </div>
+    <div id="aboutSection" class="container">
+        <div class="row">
+            <h1 class="text-center sectionHeading">About</h1>
+        </div>
+        <div id="aboutContent" class="row">
+            <div id="aboutContentRight" class="col-md-12 text-center">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+    </div>
+    <div id="servicesSection" class="container" ng-controller="boController">
+        <div class="row">
+            <h1 class="text-center sectionHeading">Services</h1>
+        </div>
+        <div class="row">
+           <service-directive info="service" ng-repeat="service in services"></service-directive>
+        </div>
+    </div>
+    <div id="contactSection" class="container">
+        <div class="row">
+            <h1 class="text-center sectionHeading">Contact</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-6 text-center">
+                <h2>Address: 1305 E Broad Ave, Rockingham, NC 28379</h2>
+                <h2>Phone: (910)-817-8734</h2>
+                <p>CALL FOR MORE INFORMATION AND TO SET UP AN APPOINTMENT TODAY!</p>
+            </div>
+            <div class="col-md-6">
+                <div class="center-block" id="map"></div>
+            </div>
+        </div>
+    </div>
+
+    <!---Angular JS--->
+    <script src="scripts/angular.min.js"></script>
+
+    <!---Bootstrap JS--->
+    <script src="scripts/ui-bootstrap-1.1.2.min.js"></script>
+    <script src="scripts/ui-bootstrap-tpls-1.1.2.min.js"></script>
+
+    <!--Controller-->
+    <script src="scripts/boController.js"></script>
+
+    <!--Directive-->
+    <script src="scripts/directives/boDirective.js"></script>
+
+    <!--Google Maps API-->
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+            async defer></script>
+    <script src="scripts/mapStuff.js"></script>
+
+    <!--jQuery-->
+    <script src="scripts/jquery-2.2.1.min.js"></script>
+
+    <!--Custom JS-->
+    <script src="scripts/bojs.js"></script>
+
+</body>
+</html>

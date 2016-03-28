@@ -1,0 +1,195 @@
+﻿body {
+    font-size: 1.5em;
+}
+
+#navigationBar {
+    background: #143757;
+    color: #F2D0A0;
+    width: 100%;
+    padding-top: 0.3em;
+    padding-bottom: 1em;
+    border-radius: 0px;
+    margin-bottom: 0px;
+}
+
+#navName {
+    font-family: 'Bad Script', cursive;
+    font-weight: 900;
+    font-size: 2.5em;
+    text-shadow: 3px 0px 3px rgba(0, 0, 0, 1);
+}
+
+.navOptions {
+    font-family: 'Julius Sans One', sans-serif;
+    padding-top: 0.5em;
+    font-weight: 900;
+    font-size: 1.5em;
+    text-shadow: 3px 0px 3px rgba(0, 0, 0, 1);
+}
+
+.topLinks {
+    text-decoration: none;
+    color: #F2D0A0;
+}
+
+.topLinks:hover {
+    color: #F2D0A0;
+}
+
+.topLinks:active{
+    text-decoration: line-through;
+    color: #F2D0A0;
+}
+
+#introSection{
+    background-color: #6B859D;
+    margin-top: 0px;
+    width: 100%;
+}
+
+#boPic{
+    margin-top: 3em;
+}
+
+#title {
+    font-family: 'Bad Script', cursive;
+    font-weight: 900;
+    font-size: 2.5em;
+    margin-top: -0.5em;
+    padding-bottom: 1em;
+    text-shadow: 3px 0px 3px rgba(0, 0, 0, 1);
+    color: #F2D0A0;
+}
+
+#aboutSection {
+    background:linear-gradient(
+            rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/barbershop.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: 100% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color:white;
+    margin-top: 0px;
+    width: 100%;
+}
+
+.sectionHeading {
+    font-family: 'Bad Script', cursive;
+    font-weight: 900;
+    font-size: 4em;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    text-shadow: 3px 0px 3px rgba(0, 0, 0, 1);
+    color: #F2D0A0;
+}
+
+#aboutContent{
+    padding-bottom: 14em;
+}
+
+#aboutContentRight {
+    font-family: 'Julius Sans One', sans-serif;
+    padding-top: 5em;
+    padding-left: 4em;
+    padding-right: 4em;
+    font-weight: 900;
+    text-shadow: 3px 0px 3px rgba(0, 0, 0, 1);
+    font-size: 1.2em;
+    color: #F2D0A0;
+}
+
+#servicesSection {
+    background-color: #6B859D;
+    margin-top: 0px;
+    width: 100%;
+    padding-bottom: 5em;
+}
+
+.servicesImg {
+    height: 225px;
+    width: 225px;
+}
+
+.servicesSectionContent {
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: 900;
+    font-size: 1.2em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+     color: #F2D0A0;
+    margin-bottom: 4em;
+}
+
+.skissors {
+    margin-left: 1em;
+    margin-right: 1em;
+    color: #F2D0A0;
+}
+
+.boStar{
+    color: #F2D0A0;
+    font-size: 2em;
+    margin-top: 6em;
+    font-weight: 900;
+}
+
+#contactSection {
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: 900;
+    font-size: 1.2em;
+    text-shadow: 3px 0px 3px rgba(0, 0, 0, 1);
+    background:linear-gradient(
+            rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/barbershop2.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: 100% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #F2D0A0;
+    width: 100%;
+    padding-bottom: 5em;
+}
+
+#contactSection p {
+    padding-top: 3em;
+    padding-bottom: 1em;
+}
+
+#contactSection h2 {
+    font-weight: 900;
+    padding-top: 1em;
+    padding-bottom:1em;
+    }
+
+#map {
+        text-shadow: none;
+        height: 400px;
+        width: 500px;
+      }
+
+@media screen and (max-width: 1000px) {
+    .boStar {
+        display: none;
+    }
+    #contactSection {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    #aboutContentRight {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #map {
+        width: 375px;
+        height: 300px;
+    }
+}
