@@ -10,6 +10,8 @@
     padding-bottom: 1em;
     border-radius: 0px;
     margin-bottom: 0px;
+    position: fixed;
+    z-index: 700;
 }
 
 #navName {
@@ -47,8 +49,16 @@
     width: 100%;
 }
 
+#introRow {
+    margin-top: 100px;
+}
+
 #boPic{
     margin-top: 3em;
+}
+
+#boBar {
+    margin-top: -2em;
 }
 
 #title {
@@ -81,7 +91,7 @@
     font-family: 'Bad Script', cursive;
     font-weight: 900;
     font-size: 4em;
-    padding-top: 0.5em;
+    padding-top: 1.5em;
     padding-bottom: 1em;
     text-shadow: 3px 0px 3px rgba(0, 0, 0, 1);
     color: #F2D0A0;
@@ -185,6 +195,14 @@
         padding-left: 1em;
         padding-right: 1em;
     }
+
+    #navigationBar{
+        position: relative;
+    }
+
+    #boPic{
+    margin-top: -1em;
+}
 }
 
 @media screen and (max-width: 600px) {
